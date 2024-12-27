@@ -34,11 +34,11 @@ esCli = es.ESClient(esAuth = es.ESAuth(esUser = user, esPassword = password, esU
 index1 = es.ESIndex(cli=esCli,indexName=indexName1)
 
 print(index1.count())
-summary(index1.count(query = {"query": {"match_all": {}}}))
+#summary(index1.count(query = {"query": {"match_all": {}}}))
 summary(index1.search(query = {"query": {"match_all": {}}}))
-summary(index1.getById(id))
-summary(index1.getMapping())
-summary(index1.dump())
+#summary(index1.getById(id))
+#summary(index1.getMapping())
+#summary(index1.dump())
 
 
 
